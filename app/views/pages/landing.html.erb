@@ -1,0 +1,32 @@
+
+
+<h1> Consultar todos los registros </h1>
+
+<div class="container">
+<h1>Students</h1>
+
+
+<div class="panel panel-defauf">
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @students.each do |student| %>
+      <tr>
+        <td><%= student.name %></td>
+        <td><%= student.Email %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+</div>
+</div>
+ 

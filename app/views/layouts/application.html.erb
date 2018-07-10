@@ -12,9 +12,26 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
 
+<nav class="navbar navbar-inverse">
+  <ol class="breadcrumb">
+  <li> <%=link_to "Index", root_path%> </li>
+  <li> <%=link_to "Landing", pages_landing_path%> </li>
+  
+</ol>
+</nav>
+
+
+
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
+
+
+  <form class="" action="" method="GET">
+    <imput type="text" name="query">
+    <imput type="submit">
+    </form>
+
 
   <body>
     <%= yield %>
